@@ -9,7 +9,7 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
   database: 'task_manager',
   synchronize: true,
   logging: false,
-  entities: [`${__dirname}/../**/*.entity.ts`],
+  entities: [`${__dirname}/../**/*.entity{.ts,.js}`],
   migrations: ['src/migration/**/*.ts'],
   subscribers: ['src/subscriber/**/*.ts'],
 };
